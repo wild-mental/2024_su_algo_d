@@ -1,30 +1,27 @@
-# [Bronze II] 문자열 반복 - 2675 
+## 풀이한 문제 ⚒️
+- 입력받은 문자열의 각 문자를 입력받은 정수만큼 입력해 새 문자열을 출력하는 문제
 
-[문제 링크](https://www.acmicpc.net/problem/2675) 
+## 소요 시간 🛩️
+- [X] 1시간 미만
+- [ ] 1~3시간
+- [ ] 3시간 이상
 
-### 성능 요약
+## 문제풀이 중점사항 🤔
+import sys
 
-메모리: 31120 KB, 시간: 40 ms
+input = sys.stdin.readline
 
-### 분류
+T = int(input())
+for _ in range(T):
+    num, alpha = input().split() 
+    num = int(num) 
+    alpha = str(alpha) 
 
-구현, 문자열
+// 입력받은 문자열(alpha)의 한 인덱스를 num을 곱한 만큼 출력
+    for i in range(len(alpha)):
+        print(num * alpha[i], end='')
+    print()
 
-### 제출 일자
-
-2024년 1월 29일 16:05:13
-
-### 문제 설명
-
-<p>문자열 S를 입력받은 후에, 각 문자를 R번 반복해 새 문자열 P를 만든 후 출력하는 프로그램을 작성하시오. 즉, 첫 번째 문자를 R번 반복하고, 두 번째 문자를 R번 반복하는 식으로 P를 만들면 된다. S에는 QR Code "alphanumeric" 문자만 들어있다.</p>
-
-<p>QR Code "alphanumeric" 문자는 <code>0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ\$%*+-./:</code> 이다.</p>
-
-### 입력 
-
- <p>첫째 줄에 테스트 케이스의 개수 T(1 ≤ T ≤ 1,000)가 주어진다. 각 테스트 케이스는 반복 횟수 R(1 ≤ R ≤ 8), 문자열 S가 공백으로 구분되어 주어진다. S의 길이는 적어도 1이며, 20글자를 넘지 않는다. </p>
-
-### 출력 
-
- <p>각 테스트 케이스에 대해 P를 출력한다.</p>
+## 그 외 추가 리서치 🚀
+- (자유롭게 관련된 의견 내용 및 참고한 자료를 공유해 주세요)
 
