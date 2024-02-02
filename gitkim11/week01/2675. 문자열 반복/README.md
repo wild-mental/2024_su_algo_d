@@ -7,7 +7,20 @@
 - [ ] 3시간 이상
 
 ## 문제풀이 중점사항 🤔
-![img.png](img.png)
+import sys
+
+input = sys.stdin.readline
+
+T = int(input())
+for _ in range(T):
+    num, alpha = input().split() 
+    num = int(num) 
+    alpha = str(alpha) 
+
+// 입력받은 문자열(alpha)의 한 인덱스를 num을 곱한 만큼 출력
+    for i in range(len(alpha)):
+        print(num * alpha[i], end='')
+    print()
 
 ## 그 외 추가 리서치 🚀
 - (자유롭게 관련된 의견 내용 및 참고한 자료를 공유해 주세요)
