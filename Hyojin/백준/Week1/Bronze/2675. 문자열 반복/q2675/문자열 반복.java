@@ -7,10 +7,10 @@ class Main {
         int testCase = scanner.nextInt();
         for(int a = 0; a < testCase; a++){
             int x = scanner.nextInt();
-            String[] inputData = scanner.next().split("");
-            for(int i = 0; i < inputData.length; i++){
+            String[] substring = scanner.next().split("");
+            for(int i = 0; i < substring.length; i++){
                 for(int j = 0; j < x; j++){
-                    System.out.print(inputData[i]);
+                    System.out.print(substring[i]);
                 }
             }
             System.out.printf("\n");
