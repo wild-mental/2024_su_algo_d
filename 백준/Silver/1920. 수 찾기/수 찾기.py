@@ -19,6 +19,6 @@ arr1 = list(map(int, sys.stdin.readline().split()))
 M = int(input())
 arr2 = list(map(int, sys.stdin.readline().split()))
 
-arr1.sort()
+arr1.sort()     #정렬을 먼저 해준뒤에 반복문에 넣으면 시간이 단축됨
 for i in arr2:
     binary_search(arr1, i)
